@@ -1,0 +1,12 @@
+{
+  "name": "cordova-plugins",
+  "version": "0.0.1",
+  "description": "Cordova plugins manager to install and verify plugins",
+  "main": "index.js",
+  "bin": { "cordova-plugins": "index.js" },
+  "author": "Rickard Olsson",
+  "dependencies": {
+    "commander": "^2.5.0",
+    "q": "^1.0.1"
+  }
+}
