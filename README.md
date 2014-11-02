@@ -10,7 +10,7 @@ $ npm install https://github.com/olssonr/cordova-plugins
 
 ## plugins.json
 
-cordova-plugins keeps tracks of the required plugins. It should contain a list of the plugins you want to install for your project. cordova-plugins expects this file to exist in the projects root folder.
+cordova-plugins keeps tracks of the required plugins in plugins.json. It should contain a list of the plugins you want to install for your project. cordova-plugins expects this file to exist in the projects root folder.
 
 ```json
 [
@@ -42,11 +42,11 @@ plugins.verify
 
 ## CLI usage
 
-If you want to use the cli it is recommend you install it globally:
+If you want to use the cli it's recommend you install it globally:
 
 ```bash
 $ npm install -g https://github.com/olssonr/cordova-plugins
-```bash
+```
 
 However you can also use it with a local installation:
 
