@@ -22,7 +22,7 @@ cordova-plugins keeps tracks of the required plugins in plugins.json. It should 
 
 ### plugins.verify
 
-Checks if the plugins in plugins.json are installed using `cordova plugin ls`. Throws an exception is a plugin is missing.
+Checks if the plugins in plugins.json are installed using `cordova plugin ls`. Throws an exception if a plugin is missing.
 
 ```js
 var plugins = require('cordova-plugins');
@@ -46,6 +46,7 @@ If you want to use the cli it's recommend you install it globally:
 
 ```bash
 $ npm install -g https://github.com/olssonr/cordova-plugins
+$ cordova-plugins -h
 ```
 
 However you can also use it with a local installation:
