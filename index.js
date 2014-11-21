@@ -42,7 +42,7 @@ var verify = function() {
       }
       else {
         throw new Error('Plugin "' + plugin +
-          '" is not installed. Please run gulp install.');
+          '" is not installed.');
       }
     });
   }).done();
