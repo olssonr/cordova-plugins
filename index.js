@@ -5,6 +5,7 @@ var sys        = require('sys');
 var fs         = require('fs');
 var q          = require('q');
 var program    = require('commander');
+var _          = require('underscore');
 
 // Private functions
 var promiseListOfInstalledPlugins = function() {
@@ -26,18 +27,12 @@ var promiseListOfInstalledPlugins = function() {
   return deferred.promise;
 };
 
-var doesArrayContain = function(array, element) {
-  return array.some(function(arrayElement) {
-    return arrayElement == element;
-  });
-};
-
 // Exported functions
 var verify = function() {
   promiseListOfInstalledPlugins().then(function(installedPlugins) {
     var plugins = JSON.parse(fs.readFileSync('plugins.json'));
     plugins.forEach(function(plugin) {
-      if (doesArrayContain(installedPlugins, plugin)) {
+      if (_.contains(installedPlugins, plugin)) {
         sys.puts(plugin + ' is installed');
       }
       else {
